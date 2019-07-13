@@ -2,7 +2,7 @@
 
 """ main.py: A 2D Rubik's Cube written in Python as a first program. """
 
-__author__  = "Avedati"
+__author__  = "Abhinav Vedati"
 __version__ = "0.0.1"
 
 from turtle import *
