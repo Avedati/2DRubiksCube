@@ -43,6 +43,11 @@ downindex = ["orange","orange","orange",
              "placeholder6","placeholder61","placeholder611",
              "6","61","611","6111"]
 #define functions
+"""
+  top()
+  
+  This function sets up the 9 turtles representing the top face of the Rubik's Cube.
+"""
 def top():
   t1 = Turtle()
   t2 = Turtle()
@@ -98,6 +103,12 @@ def top():
   t7.goto(-27, 54)
   t8.goto(0, 54)
   t9.goto(27, 54)
+ 
+"""
+  down()
+  
+  This function sets up the 9 turtles representing the bottom face of the Rubik's Cube.
+"""
 def down():
   d1 = Turtle()
   d2 = Turtle()
@@ -153,6 +164,13 @@ def down():
   d7.goto(-27, -108)
   d8.goto(0, -108)
   d9.goto(27, -108)
+  
+
+"""
+  left()
+  
+  This function sets up the 9 turtles representing the left face of the Rubik's Cube.
+"""
 def left():
   l1 = Turtle()
   l2 = Turtle()
@@ -208,6 +226,12 @@ def left():
   l7.goto(-108, -27)
   l8.goto(-81, -27)
   l9.goto(-54, -27)
+
+"""
+  right()
+  
+  This function sets up the 9 turtles representing the right face of the Rubik's Cube.
+"""
 def right():
   r1 = Turtle()
   r2 = Turtle()
@@ -263,6 +287,12 @@ def right():
   r7.goto(54, -27)
   r8.goto(81, -27)
   r9.goto(108, -27)
+
+"""
+  back()
+  
+  This function sets up the 9 turtles representing the back face of the Rubik's Cube.
+"""
 def back():
   b1 = Turtle()
   b2 = Turtle()
@@ -318,6 +348,12 @@ def back():
   b7.goto(-27, 135)
   b8.goto(0, 135)
   b9.goto(27, 135)
+
+"""
+  front()
+  
+  This function sets up the 9 turtles representing the front face of the Rubik's Cube.
+"""
 def front():
   f1 = Turtle()
   f2 = Turtle()
@@ -374,7 +410,12 @@ def front():
   f8.goto(0, -27)
   f9.goto(27, -27)
   
-
+"""
+  f()
+  
+  This function performs a front clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def f():
   in1 = []
   in1.append(topindex[6])
@@ -428,6 +469,12 @@ def f():
   frontindex[7] = fu5
   frontindex[8] = fu2
 
+"""
+  F()
+  
+  This function performs a front counter-clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def F():
   in2 = []
   in2.append(topindex[6])
@@ -480,7 +527,13 @@ def F():
   frontindex[6] = fv0
   frontindex[7] = fv3
   frontindex[8] = fv6
+
+"""
+  b()
   
+  This function performs a back clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def b():
   in3 = []
   in3.append(topindex[0])
@@ -533,7 +586,13 @@ def b():
   backindex[6] = bv0
   backindex[7] = bv3
   backindex[8] = bv6
+
+"""
+  B()
   
+  This function performs a back counter-clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def B():
   in4 = []
   in4.append(topindex[0])
@@ -586,8 +645,13 @@ def B():
   backindex[6] = bu8
   backindex[7] = bu5
   backindex[8] = bu2
+
+"""
+  l()
   
-  
+  This function performs a left clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def l():
   in5 = []
   in5.append(topindex[0])
@@ -640,7 +704,13 @@ def l():
   leftindex[6] = lu8
   leftindex[7] = lu5
   leftindex[8] = lu2
+
+"""
+  L()
   
+  This function performs a left counter-clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def L():
   in6 = []
   in6.append(topindex[0])
@@ -694,6 +764,12 @@ def L():
   leftindex[7] = lv3
   leftindex[8] = lv6
 
+"""
+  r()
+  
+  This function performs a right clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def r():
   in7 = []
   in7.append(topindex[2])
@@ -746,7 +822,13 @@ def r():
   rightindex[6] = ru8
   rightindex[7] = ru5
   rightindex[8] = ru2
+
+"""
+  R()
   
+  This function performs a right counter-clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def R(): 
   in8 = []
   in8.append(topindex[2])
@@ -799,7 +881,13 @@ def R():
   rightindex[6] = rv0
   rightindex[7] = rv3
   rightindex[8] = rv6
+
+"""
+  t()
   
+  This function performs a top clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def t():
   in9 = []
   in9.append(frontindex[0])
@@ -848,8 +936,13 @@ def t():
   topindex[6] = tu8
   topindex[7] = tu5
   topindex[8] = tu2
-  
 
+"""
+  T()
+  
+  This function performs a top counter-clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def T():
   in10 = []
   in10.append(frontindex[0])
@@ -898,7 +991,14 @@ def T():
   topindex[6] = tv0
   topindex[7] = tv3
   topindex[8] = tv6
+
   
+"""
+  d()
+  
+  This function performs a bottom clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def d():
   in11 = []
   in11.append(frontindex[6])
@@ -947,7 +1047,13 @@ def d():
   downindex[6] = du8
   downindex[7] = du5
   downindex[8] = du2
+
+"""
+  D()
   
+  This function performs a bottom counter-clockwise turn on the Rubik's Cube.
+  It will change the colors of the appropriate turtles.
+"""
 def D():
   in12 = []
   in12.append(frontindex[6])
@@ -997,36 +1103,11 @@ def D():
   downindex[7] = dv3
   downindex[8] = dv6
 
-def sidechange():
-  print "Type in a side to change to."
-  newerinput = input().lower()
-  if newerinput == "f":
-    front()
-    sidechange()
-  elif newerinput == "b":
-    back()
-    sidechange()
-  elif newerinput == "l":
-    left()
-    sidechange()
-  elif newerinput == "r":
-    right()
-    sidechange()
-  elif newerinput == "u":
-    top()
-    sidechange()
-  elif newerinput == "d":
-    down()
-    sidechange()
-  elif newerinput == "m":
-    cubeconsole()
-  else:
-    print "Error: Invalid Syntax"
-    time.sleep(1)
-    print "Redirecting ... "
-    time.sleep(1)
-    sidechange()
+"""
+  refresh()
   
+  This function redraws every face of the Rubik's Cube.
+"""
 def refresh():
   front()
   back()
@@ -1035,7 +1116,14 @@ def refresh():
   left()
   right()
   
+"""
+  cubeconsole()
   
+  This function is the user input function.
+  If the user types in a side (F, for example), that side will be turned clockwise.
+  However, if there is a ' after the side (F', for example), that side will be turned counterclockwise.
+  Incorrect input will be discarded.
+"""
 def cubeconsole():
   os.system('clear')
   print "Type ? for help."
@@ -1088,8 +1176,6 @@ def cubeconsole():
     D()
     refresh()
     cubeconsole()
-  elif newinput == "C":
-    sidechange()
   elif newinput == "Q":
     exit(0)
   else:
